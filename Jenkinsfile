@@ -26,6 +26,7 @@ pipeline {
             steps {
                 sh '''
                    cd build
+                   ls -la
                    npm test
                 '''
             }
