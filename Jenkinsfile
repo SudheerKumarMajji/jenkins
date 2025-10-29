@@ -20,5 +20,16 @@ pipeline {
                 '''
             }
         }
+
+        stage('Test') {
+            
+            }
+            steps {
+                sh '''
+                   cd build
+                   npm test
+                '''
+            }
+        }
     }
 }
