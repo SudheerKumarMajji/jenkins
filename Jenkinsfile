@@ -22,8 +22,10 @@ pipeline {
             }
         }
 */
-        stage('Run tests'){
-            parallel{
+        stage('Run tests')
+        {
+            parallel
+            {
                 stage('Test') {
             
              agent {
@@ -34,6 +36,7 @@ pipeline {
             }
             steps {
                 sh '''
+                   echo "hello"
                    cd build
                    ls -la
                    npm test
